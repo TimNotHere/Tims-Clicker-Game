@@ -15,7 +15,6 @@ Welcome to Tim's Clicker Game! This is a simple game where you click a button to
 
 * Simple, intuitive gameplay.
 * Upgrades to help you earn points faster.
-* Progression system with multiple levels.
 * Responsive design for play on desktop or mobile devices.
 
 # Technologies Used
