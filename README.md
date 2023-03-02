@@ -6,20 +6,18 @@ Welcome to Tim's Clicker Game! This is a simple game where you click a button to
 
 # How to Play
 
-1. Open the game by clicking on the index.html file.
-2. Click the button as many times as you can to earn points.
-3. Use your points to purchase upgrades, such as automatic clicking or bonus points.
-4. Keep clicking and upgrading to reach higher levels and earn even more points.
+1. Click the button as many times as you can to earn points.
+2. Use your points to purchase upgrades, such as automatic clicking or bonus points.
+3. Keep clicking and upgrading to reach higher levels and earn even more points.
 
 # Features
 
 * Simple, intuitive gameplay.
 * Upgrades to help you earn points faster.
-* Responsive design for play on desktop or mobile devices.
 
 # Technologies Used
 
-This game was built using HTML, CSS and JavaScript.
+This game was built using electron.
 
 
 
