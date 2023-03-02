@@ -20,7 +20,7 @@ Welcome to Tim's Clicker Game! This is a simple game where you click a button to
 
 # Technologies Used
 
-This game was built using HTML, CSS, and JavaScript.
+This game was built using JSX.
 
 
 
