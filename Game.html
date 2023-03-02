@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="clicker.png" type="image/icon type">
+	<meta charset="UTF-8">
+	<title>Tim's Clicker Game</title>
+	<style>
+		body {
+			background-color: #343541;
+			color: white;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 48px;
+			margin-top: 50px;
+		}
+
+		#startButton {
+			background-color: green;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 24px;
+			cursor: pointer;
+			margin-top: 50px;
+		}
+
+		#gameContainer {
+			display: none;
+			margin-top: 50px;
+		}
+
+		#scoreDisplay {
+			font-size: 36px;
+			margin-bottom: 50px;
+		}
+
+		button {
+			background-color: green;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 24px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		button:disabled {
+			background-color: grey;
+			cursor: default;
+		}
+
+		#powerupShop {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#powerupShop button {
+			margin-left: 20px;
+		}
+
+		#scoreEmoji {
+			font-size: 48px;
+			margin-right: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Tim's Clicker Game</h1>
+	<button id="startButton">&#x1F3AE; Start Game</button>
+	<div id="gameContainer">
+		<div>
+			<p>Score:</p>
+			<div id="scoreDisplay">0</div>
+			<div id="scoreEmoji">&#x1F449;</div>
+		</div>
+		<button id="clickButton">Click Me! &#x1F446;</button>
+		<div id="powerupShop">
+			<button id="doubleClickPowerButton">Double Click Power (100 points)</button>
+			<button id="autoClickerButton">Auto Clicker (500 points)</button>
+		</div>
+	</div>
+
+	<script>
+		let score = 0;
+		let doubleClickPower = false;
+		let autoClicker = false;
+		let autoClickerInterval;
+
+		const startButton = document.getElementById('startButton');
+		const gameContainer = document.getElementById('gameContainer');
+		const scoreDisplay = document.getElementById('scoreDisplay');
+		const clickButton = document.getElementById('clickButton');
+		const doubleClickPowerButton = document.getElementById('doubleClickPowerButton');
+		const autoClickerButton = document.getElementById('autoClickerButton');
+		const scoreEmoji = document.getElementById('scoreEmoji');
+
+		startButton.addEventListener('click', function() {
+			startButton.style.display = 'none';
+			gameContainer.style.display = 'block';
+		});
+
+		clickButton.addEventListener('click', function() {
+			let points = 1;
+			if (doubleClickPower) {
+				points *= 2;
+			}
+			score += points;
+			scoreDisplay.textContent = score;
+		});
+
+		doubleClickPowerButton.addEventListener('click', function() {
+			if (score >= 100 && !doubleClickPower) {
+				score
+		 -= 100;
+			Display();
+			doubleClickPower = true;
+			clickButton.textContent = 'Click Me! 👆';
+		}
+	});
+
+	autoClickerButton.addEventListener('click', function() {
+		if (score >= 500 && !autoClicker) {
+			score -= 500;
+			Display();
+			autoClicker = true;
+			autoClickerInterval = setInterval(function() {
+				clickButton.click();
+			}, 1000);
+		}
+	});
+
+	function Display(){
+		scoreDisplay.textContent = score;
+		doubleClickPowerButton.disabled = doubleClickPower;
+		autoClickerButton.disabled = autoClicker;
+	}
+
+</script>
+</body>
+</html>
