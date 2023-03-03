@@ -2,6 +2,8 @@
 
 # Tim's Clicker Game
 
+![Github Stars](https://img.shields.io/github/stars/TimNotHere/timnothere.github.io?style=social) ![Twitter](https://img.shields.io/twitter/follow/NotTimNotHere?style=social)
+
 Welcome to Tim's Clicker Game! This is a simple game where you click a button to earn points and upgrade your clicking abilities.
 
 # How to Install
