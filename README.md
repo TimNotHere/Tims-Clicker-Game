@@ -1,4 +1,4 @@
-![Icon](https://user-images.githubusercontent.com/102999216/222454410-4b701146-b656-41fa-a847-302d11746d24.png)
+![Icon](https://user-images.githubusercontent.com/102999216/222619294-b7810e59-dcbc-4cd9-afca-1508e81aa50a.png)
 
 # Tim's Clicker Game
 
