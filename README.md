@@ -4,6 +4,11 @@
 
 Welcome to Tim's Clicker Game! This is a simple game where you click a button to earn points and upgrade your clicking abilities.
 
+# How to Install
+
+* 1st Run "npm install"
+* 2nd Run "npm run start"
+
 # How to Play
 
 1. Click the button as many times as you can to earn points.
