@@ -8,8 +8,9 @@ Welcome to Tim's Clicker Game! This is a simple game where you click a button to
 
 # How to Install
 
-* 1st Run "npm install"
-* 2nd Run "npm run start"
+* 1st Make sure you have [Node.js](https://nodejs.dev/en/) installed
+* 2nd Run "npm install"
+* 3rd Run "npm run start"
 
 # How to Play
 
