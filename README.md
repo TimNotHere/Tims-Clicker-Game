@@ -25,7 +25,7 @@ Welcome to Tim's Clicker Game! This is a simple game where you click a button to
 
 # Technologies Used
 
-This game was built using electron.
+This game was built using [electron](https://www.reddit.com/user/TimNotHere).
 
 
 
